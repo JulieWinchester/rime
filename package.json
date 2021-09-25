@@ -1,5 +1,5 @@
 {
-  "name": "dopey",
+  "name": "rime",
   "homepage": "http://www.juliewinchester.io/dnd/",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-production": "react-scripts build && rm -rf /var/www/html/dnd && mv build /var/www/html/dnd",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
