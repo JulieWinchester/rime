@@ -36,5 +36,14 @@
       }
     ],
   "graveyard": [],
-  "sessions": []
+  "sessions": [
+    {
+      "name": "Chapter 1: The Cold Pierces",
+      "number": 1
+    },
+    {
+      "name": "Chapter 2: A Rough Night at the Three Feathers",
+      "number": 2
+    }
+  ]
 }
