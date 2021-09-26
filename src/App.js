@@ -13,7 +13,7 @@ import './App.css';
 
 function CharacterPortrait(props) {
   return (
-    <Col key={props.name} className="character-portrait-container" sm={4} xs={6}>
+    <Col key={props.name} className="character-portrait-container" sm={3} xs={6}>
       <a href="#card" onClick={props.onClick}>
         <Image src={props.img} className="character-portrait img-shadow" alt={props.name} />
       </a>
@@ -70,7 +70,7 @@ function CharacterCard(props) {
   return (
     <Row className="justify-content-center media-container">
       <Col xs={11}>
-      <Media className="">
+      <Media>
             <Media.Body className="align-self-center">
               <h5>{props.character.name}</h5>
               <p>{props.character.desc}</p>
@@ -201,7 +201,7 @@ function Parchment() {
 
   return (
     <div id="parchment-container">
-      <div id="parchment"></div>
+      <div id="parchment" className="parchment-color"></div>
       <div id="contain">
         <p id="parchment-title">Never-ending Night in the Icy North!</p>
         <p id="parchment-subtitle"><i>Esteemed society mage seeks members for mission of relief and discovery!</i></p>
@@ -261,12 +261,6 @@ class App extends React.Component {
           <Row className="justify-content-center middle-divider" noGutters></Row>
 
           <Row className="justify-content-center">
-            <Parchment />
-          </Row>
-
-          <Row className="justify-content-center middle-divider" noGutters></Row>
-
-          <Row className="justify-content-center">
             <h4>
               {this.state.characterListTitle}
             </h4>
@@ -289,6 +283,12 @@ class App extends React.Component {
           </ScrollableAnchor>
 
           <SessionsPane sessions={this.state.sessions} title={this.state.sessionsListTitle} />
+
+          <Row className="justify-content-center middle-divider" noGutters></Row>
+
+          <Row className="justify-content-center">
+            <Parchment />
+          </Row>
 
           <Row className="justify-content-center bottom-divider" noGutters></Row>
           <Row className="footer justify-content-center">

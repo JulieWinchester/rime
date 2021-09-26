@@ -1,15 +1,40 @@
 {
-	"coverImg": "./images/rotf-background3.jpg",
+  "coverImg": "./images/rotf-background3.jpg",
   "logoImg": "./images/rotf-logo2.png",
-	"title": "Rime of the Frostmaiden",
+  "title": "Rime of the Frostmaiden",
   "subtitle": "Temp subtitle",
-	"copy": "A Dungeons and Dragons campaign of terror, survival, community, whimsy, sled-dogs, relic hunting, the unexpected, and classic high fantasy on the ice. Inspirations include The Thing, 30 Days of Night, The Hateful Eight, Fargo, the Drizzt Do'Urden novels, Indiana Jones, and At the Mountains of Madness, among others.",
-	"characterListTitle": "Cast of Characters",
+  "copy": "A Dungeons and Dragons campaign of terror, survival, community, whimsy, sled-dogs, relic hunting, the unexpected, and classic high fantasy on the ice. Inspirations include The Thing, 30 Days of Night, The Hateful Eight, Fargo, the Drizzt Do'Urden novels, Indiana Jones, and At the Mountains of Madness, among others.",
+  "characterListTitle": "Cast of Characters",
   "graveyardTitle": "Fallen Comrades",
-	"sessionsListTitle": "Chapters",
-	"author": "Julie Winchester",
-	"authorEmail": "julia.m.winchester@gmail.com",
-	"characters": [],
+  "sessionsListTitle": "Chapters",
+  "author": "Julie Winchester",
+  "authorEmail": "julia.m.winchester@gmail.com",
+  "characters": [
+      {
+        "name": "Ace",
+        "desc": "Level 2 Kobold Rogue.",
+        "imgpixel": "./images/characters/1581111423-57016786.jpeg",
+        "img": "./images/characters/1581111423-57016786.jpeg"
+      },
+      {
+        "name": "Cam Sarris",
+        "desc": "Level 2 Human Fighter.",
+        "imgpixel": "./images/characters/1581111423-44665137.png",
+        "img": "./images/characters/1581111423-44665137.png"
+      },
+      {
+        "name": "Mairwen",
+        "desc": "Level 2 Reborn Druid.",
+        "imgpixel": "./images/characters/1581111423-57023895.jpeg",
+        "img": "./images/characters/1581111423-57023895.jpeg"
+      },
+      {
+        "name": "Uki Skeaŋka",
+        "desc": "Level 2 Shifter Ranger.",
+        "imgpixel": "./images/characters/1581111423-56810889.jpeg",
+        "img": "./images/characters/1581111423-56810889.jpeg"
+      }
+    ],
   "graveyard": [],
-	"sessions": []
+  "sessions": []
 }
