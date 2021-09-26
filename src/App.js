@@ -260,22 +260,24 @@ class App extends React.Component {
 
           <Row className="justify-content-center middle-divider" noGutters></Row>
 
-          <Row className="justify-content-center">
-            <h4>
-              {this.state.characterListTitle}
-            </h4>
-          </Row>
-          <CharacterPortraitGrid 
-            characters={this.state.characters} 
-            onClick={(i, e) => this.handleClick(i, e)}
-          />
           <ScrollableAnchor id={'card'}>
-            <Row className="justify-content-center top-spacing bottom-spacing">
-              <CharacterCard 
-                character={this.state.currentCharacter} 
-                onClick={(e) => this.handleCardCloseClick(e)} 
+            <div>
+              <Row className="justify-content-center">
+                <h4>
+                  {this.state.characterListTitle}
+                </h4>
+              </Row>
+              <CharacterPortraitGrid 
+                characters={this.state.characters} 
+                onClick={(i, e) => this.handleClick(i, e)}
               />
-            </Row>
+              <Row className="justify-content-center top-spacing bottom-spacing">
+                <CharacterCard 
+                  character={this.state.currentCharacter} 
+                  onClick={(e) => this.handleCardCloseClick(e)} 
+                />
+              </Row>
+            </div>
           </ScrollableAnchor>
 
           <ScrollableAnchor id={'session'}>
