@@ -1,5 +1,4 @@
 import React from 'react';
-import SessionDescriptions from './SessionDescriptions.js';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -10,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import data from './data.json';
 import './App.css';
+import ImportHtml from './ImportHtml';
+import ImportMarkdown from './ImportMarkdown';
 
 function CharacterPortrait(props) {
   return (
@@ -91,6 +92,15 @@ function CharacterCard(props) {
 }
 
 function Session(props) {
+  let sessionContent;
+  if (props.session.markdown) {
+    sessionContent = <ImportMarkdown path={props.session.markdown} />;
+  } else if (props.session.html) {
+    sessionContent = <ImportHtml path={props.session.html} />;
+  } else {
+    sessionContent = <span />;
+  }
+
   return (
     <div className="session">
       <Row className="justify-content-center">
@@ -102,7 +112,7 @@ function Session(props) {
         <a className="return-link" href="#session" onClick={props.onClick}>Return To List of Sessions</a>
       </Row>
       <Row className="justify-content-center" noGutters>
-        <SessionDescriptions session={props.session.number} />
+        {sessionContent}
       </Row>
     </div>
   );

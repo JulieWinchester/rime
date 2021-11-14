@@ -9,6 +9,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
+    "markdown-to-jsx": "^7.1.3",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
@@ -17,10 +18,10 @@
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build-production": "react-scripts build && rm -rf /var/www/html/dnd && mv build /var/www/html/dnd",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build-production": "react-app-rewired build && rm -rf /var/www/html/dnd && mv build /var/www/html/dnd",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "raw-loader": "^3.1.0"
+    "html-loader": "^1.3.2",
+    "raw-loader": "^3.1.0",
+    "react-app-rewired": "^2.1.8"
   }
 }

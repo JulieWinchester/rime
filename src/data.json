@@ -38,12 +38,24 @@
   "graveyard": [],
   "sessions": [
     {
-      "name": "Chapter 1: The Cold Pierces",
-      "number": 1
+      "name": "Chapter 1: Cold Open",
+      "markdown": "./chapters/1.md"
     },
     {
       "name": "Chapter 2: A Rough Night at the Three Feathers",
-      "number": 2
+      "markdown": "./chapters/2.md"
+    },
+    {
+      "name": "Chapter 3: The Icewind Dale Expedition",
+      "markdown": "./chapters/3.md"
+    },
+    {
+      "name": "Chapter 4: Offerings and Lotteries",
+      "html": "./chapters/4.html"
+    },
+    {
+      "name": "Chapter 5: Aurora Stroll",
+      "html": "./chapters/5.html"
     }
   ]
 }
