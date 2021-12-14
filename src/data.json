@@ -39,7 +39,7 @@
   "sessions": [
     {
       "name": "Chapter 1: Cold Open",
-      "markdown": "./chapters/1.md"
+      "markdown": "././chapters/1.md"
     },
     {
       "name": "Chapter 2: A Rough Night at the Three Feathers",
@@ -56,6 +56,14 @@
     {
       "name": "Chapter 5: Aurora Stroll",
       "html": "./chapters/5.html"
+    },
+    {
+      "name": "Chapter 6: Auril's Creature",
+      "html": "./chapters/6.html"
+    },
+    {
+      "name": "Chapter 7: What's Past is Prologue",
+      "html": "./chapters/7.html"
     }
   ]
 }
